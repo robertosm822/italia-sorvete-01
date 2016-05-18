@@ -18,5 +18,6 @@ Route::get('/', function () {
 Route::get('teste/{nome}', 'TesteController@index');
 
 Route::get('clientes', 'ClientesController@index');
+Route::get('clientes/listar', 'ClientesController@listar');
 
 Route::get('login', 'UsersController@login');

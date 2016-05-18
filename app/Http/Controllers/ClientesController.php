@@ -38,6 +38,10 @@ class ClientesController extends Controller
 
         return view('clientes.index', compact('clientes'));
     }
+    
+    public function listar(){
+    	return view('clientes.listar');
+    }
 
     
 }

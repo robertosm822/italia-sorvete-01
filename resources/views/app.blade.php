@@ -70,10 +70,21 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#" style="background-color: #B70000;">Clientes</a></li>
+                	
+                    <li class="active">
+                    	<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="background-color: #B70000;">
+                    		Clientes     <span class="caret"></span>
+                    	</a>
+                    	<ul class="dropdown-menu">
+                            
+                            <li><a href="{{ url('/clientes') }}">Cadastrar</a></li>
+                            <li><a href="{{ url('/clientes/listar') }}">Listar</a></li>
+                            
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-
+					
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             <span class="glyphicon glyphicon-user"></span>
@@ -83,7 +94,7 @@
                             <li><a href="#">Cadastro</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
+                    <li><a href="{{ url('/login') }}"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
                 </ul>
             </div>
         </div>
