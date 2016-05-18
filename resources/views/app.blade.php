@@ -49,6 +49,11 @@
         	
         	var navBar = document.getElementsByClassName('navbar');
         	navBar[0].style.visibility = "hidden";
+        	var footerBar = document.getElementsByClassName('footer').innerHTML = "";
+        	//footerBar.style.visibility = "hidden";
+        	setTimeout(function(){
+        	 	$('footer').remove();
+        	}, 2000);
         }
     </script>
 </head>
