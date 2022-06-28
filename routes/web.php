@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,5 +19,5 @@ Route::get('/', function () {
 });
 
 //rotas para melhorar
-Route::get('clientes', 'ClientesController@index');
-Route::get('clientes/listar', 'ClientesController@listar');
+Route::get('clientes', 'App\Http\Controllers\ClientesController@index');
+Route::get('clientes/listar', 'App\Http\Controllers\ClientesController@listar');
